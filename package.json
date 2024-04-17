@@ -1,14 +1,19 @@
 {
   "name": "typescript-starter",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "tsc; esbuild build/index.js --bundle --platform=node --target=node20 --outfile=out.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "esbuild": "0.20.2",
+    "ts-jest": "^29.1.2",
     "typescript": "^5.4.5"
   }
 }
