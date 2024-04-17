@@ -8,10 +8,7 @@ const config = {
   clearMocks: true,
   coverageProvider: "v8",
   preset: "ts-jest",
-  testPathIgnorePatterns: [
-    "/node_modules/",
-    "/dist/"
-  ]
+  testPathIgnorePatterns: ["/node_modules/", "/dist/"],
 };
 
 export default config;

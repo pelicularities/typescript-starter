@@ -1,18 +1,23 @@
 # typescript-starter
+
 This is a starter repo for TypeScript, containing everything needed to write, test, and build TypeScript for a Node.js runtime. It's intended as a simple command-line playground for TypeScript.
 
 ## How to use
+
 1. `npm install`
 2. To run tests: `npm run test`
 3. To build and bundle: `npm run build`
-4. To run the bundled 
+4. To run the bundled
 
 ## What happens when you run `npm run build`?
+
 The `npm run build` script does two things:
+
 1. Run `tsc`, transpiling all non-excluded files into JS and outputting them into the `build` folder
 2. Run `esbuild` using `build/index.js` as the entry point and `node` as the target platform, bundling the result into `./out.js`.
 
 ## Why use esbuild?
+
 I prefer using [ES modules](https://nodejs.org/api/esm.html#modules-ecmascript-modules) over [CommonJS modules](https://nodejs.org/api/modules.html#modules-commonjs-modules):
 
 ```ts
@@ -36,8 +41,9 @@ To work around this, I use TypeScript with the `bundler` module resolution confi
 tl;dr: the sole reason for using `esbuild` in this repo is to allow me to use ESM instead of CJS.
 
 ## To-do list
+
 - [x] Add TypeScript
 - [x] Add `jest`
 - [x] Add `esbuild`
 - [x] Add `eslint`
-- [ ] Add `prettier`
+- [x] Add `prettier`
