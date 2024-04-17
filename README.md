@@ -29,7 +29,7 @@ There are [no plans](https://github.com/nodejs/node/issues/46006) to support ext
 import addNumbers from "./addNumbers.js";
 ```
 
-This makes very little sense to me. It's a huge [leak in the TypeScript abstraction](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/). I prefer to labor under the illusion that I am not actually writing JavaScript, and I prefer not think at all about how TypeScript gets transformed into something that will execute in the Node runtime.
+This makes very little sense to me. It's a huge [leak in the TypeScript abstraction](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/). I prefer to labor under the illusion that I am not actually writing JavaScript, and I prefer not to think at all about how TypeScript gets transformed into something that will execute in the Node runtime.
 
 To work around this, I use TypeScript with the `bundler` module resolution configuration, which is the only module resolution configuration that supports extensionless relative paths. Naturally, this produces a `tsc` build that will not run on Node without bundling. So, I picked the fastest bundler that would solve this problem.
 
@@ -39,5 +39,5 @@ tl;dr: the sole reason for using `esbuild` in this repo is to allow me to use ES
 - [x] Add TypeScript
 - [x] Add `jest`
 - [x] Add `esbuild`
-- [ ] Add `eslint`
+- [x] Add `eslint`
 - [ ] Add `prettier`
