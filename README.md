@@ -7,7 +7,7 @@ This is a starter repo for TypeScript, containing everything needed to write, te
 1. `npm install`
 2. To run tests: `npm run test`
 3. To build and bundle: `npm run build`
-4. To run the bundled
+4. To run the bundled output: `node out.js`
 
 ## What happens when you run `npm run build`?
 
